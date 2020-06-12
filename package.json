@@ -1,11 +1,11 @@
 {
-  "name": "express-boilerplate",
+  "name": "knex-practice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practicing knex/sql",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require test/setup.js",
-    "start": "node src/practice.js",
+    "test": "mocha --require test/setup.js --watch",
+    "start": "node src/blogful.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
   },
@@ -20,5 +20,22 @@
     "knex": "^0.21.1",
     "morgan": "^1.10.0",
     "pg": "^8.2.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdreid13/knex-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gdreid13/knex-practice/issues"
+  },
+  "homepage": "https://github.com/gdreid13/knex-practice#readme"
 }
